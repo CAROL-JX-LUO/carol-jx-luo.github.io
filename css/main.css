@@ -78,7 +78,7 @@ body{
 
 @media screen and (max-width: 1200px) {
     .menu-open {
-        transform: translateX(40%);
+        transform: translateX(50%);
     }
 }
 
