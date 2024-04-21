@@ -96,7 +96,7 @@ function onSubmit(event) {
     if (!(firstName.length === 0) && validateEmail(email) && !(leaveMessage.length === 0)) {
       allInputs.forEach(singleInput => singleInput.value = '');
       textareaInput.value = '';
-      alert('Response recieved but not sent because there is no backend yet! Comming soon ;)');
+      alert('Response recieved but not sent because there is no backend yet! Coming soon ;)');
     }
 }
 
