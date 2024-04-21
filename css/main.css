@@ -283,7 +283,7 @@ li span{
 
 @media screen and (max-width: 480px) {
     .hobbies-title{
-        text-align: center;
+        text-align: left;
         padding-bottom: 170px;
     }
 }
