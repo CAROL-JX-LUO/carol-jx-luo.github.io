@@ -1,0 +1,452 @@
+html{
+    background-color: #e4dfd7;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#5d686d;
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+body{
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 4.0rem;
+    }
+    body {
+       font-size: 1.2rem;
+    }
+}
+
+/* HEADER SECTION + HAMBURGER MENU */
+
+.website-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.website-logo{
+    height: 180px;
+    border-radius: 100px;
+}
+
+.controls {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.menu-control {
+    margin: 45px;
+    height: 5em;
+    cursor: pointer;
+    background-color: #eac9c6;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    .menu-control {
+        height: 2.5em;
+    }
+}
+
+.menu {
+    background-color: #bcdcd9;
+    padding: 15px 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.25s ease-in-out;
+    transform: translateX(100%);
+    z-index: 10;
+}
+
+.menu-open {
+    transform: translateX(65%);
+    opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu-open {
+        transform: translateX(10%);
+    }
+}
+
+.menu a, .menu a:focus, .menu a:visited {
+    color: white;
+    display: block;
+    font-size: 50px;
+    margin: 50px auto;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .menu a, .menu a:focus, .menu a:visited {
+        font-size: 35px;
+    }
+}
+
+.menu-close {
+    background-color: white;
+    color: #d0cade;
+}
+
+/* INTRO  */
+
+.intro-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .intro-section {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+.intro-container {
+    margin: 0px 20px 0px 20px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.intro-text{
+    border-top: dotted 2px #5d686d;
+    border-bottom: dotted 2px #5d686d;
+    padding: 15px 0px 15px 0px;
+}
+
+.profile{
+    height: 300px;
+    border-radius: 100px;
+}
+
+/* ANIMATE BOUNCE */
+.animate-bounce{
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-15px);
+      }
+}
+
+.arrow{
+    height: 5em;
+    width: 5em;
+    background-color: #eac9c6;
+    border-radius: 100px;
+    margin: 10% auto 5% auto;
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    .arrow {
+      height: 3em;
+      width: 3em;
+    }
+}
+
+/* WHERE I STARTED */
+.section-2-optom-photo{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.optom-photo{
+    height:20em;
+    border-radius: 150px;
+}
+
+@media screen and (max-width: 480px) {
+    .optom-photo{
+        height: 14rem;
+    }
+  }  
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .optom-photo{
+        height: 16rem;
+    }
+}  
+
+.section-2-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .section-2-container {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+.where-i-started-text{
+    max-width: 60vh;
+    border-top: dotted 2px #5d686d;
+    border-bottom: dotted 2px #5d686d;
+    text-align:center;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+li{
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23EAC9C6"><path d="M18 4c-4-1-6 3-6 3s-2-4-6-3-4 6-2 8l8 8 8-8c2-2 2-7-2-8z"></path></svg>'); 
+}
+
+li::marker{
+    font-size: 2.5em;
+    line-height: 0.2;
+}
+
+li span{
+    vertical-align: 0.2em;
+}
+
+.optom-photo-2{
+    height:450px;
+    border-radius: 150px;
+}
+
+/* WHERE IM HEADED */
+.coding-image{
+    height: 18em;
+    border-radius: 150px;
+}
+
+@media screen and (max-width: 480px) {
+    .coding-image{
+        height: 11rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1060px) {
+    .coding-image{
+        height: 14rem;
+    }
+}  
+
+.where-im-headed{
+    display:flex;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .where-im-headed {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+.where-im-headed-text{
+    max-width: 50vh;
+    border-top: dotted 2px #5d686d;
+    border-bottom: dotted 2px #5d686d;
+    text-align: center;
+}
+
+/* MORE ABOUT ME / HOBBIES */
+.hobbies-two-containers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.text-below-hobbies{
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(#eac9c6,#e4dfd7);
+    height: 200px;
+    line-height: 1.4;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .hobbies-two-containers {
+      grid-template-columns: 1fr;
+    }
+    .text-below-hobbies{
+       height: auto;
+    }
+}
+
+.baking-image{
+    background-image: url('../img/baking.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    background-color: rgba(0,0,0,0.2);
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    text-indent: 10%;
+    color: white;
+    border-radius: 50px;
+}
+
+.bouldering-image{
+    background-image: url('../img/bouldering.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    background-color: rgba(0,0,0,0.2);
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    text-indent: 10%;
+    color: white;
+    border-radius: 50px;
+}
+
+.instagram-logo{
+    height: 2em;
+    border-radius: 100px;
+}
+
+/* GET IN TOUCH  */
+
+.get-in-touch-text{
+    max-width: 40%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .get-in-touch-text{
+        max-width: 50vh;
+    }
+}
+
+.linkedin-logo{
+    height: 1.5em;
+    border-radius: 100%;
+    background-color: white;
+    display:inline-block;
+    vertical-align: bottom;
+}
+
+.get-in-touch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: #bcdcd9;
+    border-radius: 10px;
+    border: 3px solid #5d686d;
+    padding: 15px 25px 25px 25px;
+  }
+
+label {
+    font-weight: bold;
+}
+
+legend{
+    padding-bottom: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
+
+fieldset{
+    border: none;
+}
+
+input, textarea{
+    display: block;
+    margin: 5px 0px 5px 0px;
+    border: none;
+}
+
+textarea{
+    height: 75px;
+    width: 450px;
+}
+
+@media screen and (max-width: 480px) {
+    textarea {
+        width: 250px;
+    }
+}
+
+input{
+    height: 30px;
+    width: 450px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    input {
+        width: 250px;
+    }
+}
+
+textarea:focus,
+input[type="text"]:focus,
+select:focus {
+  background: #eac9c6;
+  opacity: 0.9;
+  border: 3px solid #5d686d;
+  outline: none;
+}
+
+button{
+    background-color: #5d686d;
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 5px 0px; 
+    font-size: 20px; 
+}
+
+.validation-error {
+    color: red;
+}
+
+
+/* FOOTER*/
+footer{
+    text-align: right;
+    font-size: small;
+    padding-top: 50px;
+}
+
+
