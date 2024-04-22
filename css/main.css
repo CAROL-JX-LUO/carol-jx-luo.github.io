@@ -211,6 +211,7 @@ body{
 
 ul{
     list-style-position: inside;
+    text-align: center;
 }
 
 li{
