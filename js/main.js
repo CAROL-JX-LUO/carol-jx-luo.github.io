@@ -3,8 +3,7 @@ function showMenu() {
   document.querySelector('.menu').classList.add('menu-open');
 }
 
-function hideMenu(event) {
-  event.preventDefault();
+function hideMenu() {
   document.querySelector('.menu').classList.remove('menu-open');
 }
 
